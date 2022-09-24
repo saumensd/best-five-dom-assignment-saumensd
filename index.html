@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My fovorite player</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="p-5  mb-2 text-light bg-primary container">
+    <h1 class="text-center">My fovorite player</h1>
+    <p class="text-center">Football is my favorite game. Every Football player <br>
+      i like . I like football worldcup. I like football <br>
+      tounament.</p>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="image/player1.webp" class="card-img-top image" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">lional mike</h5>
+              </div>
+              <div class="w-75 mx-auto text-center mb-4">
+                <button type="button" class="btn btn-primary w-100" onclick="topPlayer('lional mike', this)">Select</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="image/player2.jpg" class="card-img-top image" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Mikel arya</h5>
+              </div>
+              <div class="w-75 mx-auto text-center mb-4">
+                <button type="button" class="btn btn-primary w-100"
+                  onclick="topPlayer('Mikel arya',this)">Select</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="image/player3.jpg" class="card-img-top image" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Neymar</h5>
+              </div>
+              <div class="w-75 mx-auto text-center mb-4">
+                <button type="button" class="btn btn-primary w-100" onclick="topPlayer('Neymar',this)"> Select </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="image/player4.jpg" class="card-img-top image" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Ronal Jr</h5>
+              </div>
+              <div class="w-75 mx-auto text-center mb-4">
+                <button type="button" class="btn btn-primary w-100" onclick="topPlayer('Ronal Jr',this)">Select </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="image/players5.jpg" class="card-img-top image" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Anthony n.</h5>
+              </div>
+              <div class="w-75 mx-auto text-center mb-4">
+                <button type="button" class="btn btn-primary w-100" onclick="topPlayer('Anthony n.',this)">Select</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="image/player6.jpg" class="card-img-top image" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Serior Ronaldo</h5>
+              </div>
+              <div class="w-75 mx-auto text-center mb-4">
+                <button type="button" class="btn btn-primary w-100" onclick="topPlayer('Serior Ronaldo',this)">Select</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h2 class="text-center">Top Player 5</h2>
+        <div class="w-100">
+          <ol id="cart"></ol>
+        </div>
+        <div class="w-100 my-5">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Per player</span>
+            <input type="text" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default" id="perItem" />
+          </div>
+          <button class="btn btn-primary w-100" onclick="calculate()"> Calculate</button>
+          <h5 class="my-2">Players Expenses: $<span id="total">0</span></h5>
+        </div>
+
+        <div class="w-100 my-5">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Manager</span>
+            <input type="text" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default" id="manager" />
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Coach</span>
+            <input type="text" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default" id="Coach" />
+          </div>
+          <button class="btn btn-primary w-100" onclick="calculateTotal()"> Calculate Total</button>
+          <h5 class="my-2">Tolat: <span id="subtotal">0</span></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
