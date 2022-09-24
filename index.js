@@ -13,7 +13,7 @@ function topPlayer(name, button) {
   }
   button.setAttribute("disabled", true);
 }
-
+// calculate
 function calculate() {
   const perItem = document.getElementById("perItem").value;
   const cartLeng = document.querySelectorAll(".selected");
